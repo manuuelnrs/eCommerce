@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres MX</title>
+
+    <!-- Estilo de colores y diseño en general -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Estilo de iconos locales -->
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper"> 
+        <aside>
+            <header>
+                <h1 class="logo">Postres de Corazón</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a class="boton-menu boton-volver" href="./index.html">
+                            <i class="fa-solid fa-angles-left"></i>Seguir comprando
+                        </a>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito active" href="./carrito.html">
+                            <i class="fa-solid fa-cart-shopping"></i>Carrito
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2023 Equipo 14</p>
+            </footer>
+        </aside>
+
+        <main>
+            <h2 class="titulo-principal">Carrito</h2>
+            
+            <div class="contenedor-carrito">
+                <p class="carrito-vacio">Tu carrito está vacío <i class="fa-regular fa-face-frown"></i></p>
+                <div class="carrito-productos disabled">
+                    <div class="carrito-producto">
+                        <img class="carrito-producto-imagen" src="./imagenes/pasteles/01.jpg">
+                        <div class="carrito-producto-titulo">
+                            <small>TItulo</small>
+                            <h3>Producto</h3>
+                        </div>
+                        <div class="carrito-producto-cantidad">
+                            <small>Cantidad</small>
+                            <p>1</p>
+                        </div>
+                        <div class="carrito-producto-precio">
+                            <small>Precio</small>
+                            <p>$100</p>
+                        </div>
+                        <div class="carrito-producto-subtotal">
+                            <small>Subtotal</small>
+                            <p>$100</p>
+                        </div>
+                        <button class="carrito-producto-eliminar"><i class="fa-solid fa-trash-can fa-lg"></i></button>
+                    </div>
+                </div>
+
+                <div class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izq">
+                        <button class="carrito-acciones-vaciar">
+                            Vaciar carrito
+                        </button>
+                    </div>
+                    <div class="carrito-acciones-der">
+                        <div class="carrito-acciones-total">
+                            <p>Total:</p>
+                            <p id="total">$100</p>
+                        </div>
+                        <button class="carrito-acciones-comprar">
+                            Comprar ahora
+                        </button>
+                    </div>
+                </div>
+
+                <p class="carrito-comprar disabled">¡Muchas gracias por tu compra! <i class="fa-regular fa-face-laugh-wink"></i></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

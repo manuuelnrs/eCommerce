@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres MX</title>
+
+    <!-- Estilo de colores y diseño en general -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Estilo de iconos locales -->
+    <link href="./css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper"> 
+        <aside>
+            <header>
+                <h1 class="logo">Postres de Corazón</h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button class="boton-menu boton-categoria active"><i class="fa-solid fa-cookie"></i>Postres</button>
+                    </li>
+                    <li>
+                        <button class="boton-menu boton-categoria"><i class="fa-solid fa-cookie-bite"></i>Pasteles</button>
+                    </li>
+                    <li>
+                        <button class="boton-menu boton-categoria"><i class="fa-solid fa-cookie-bite"></i>Crepas</button>
+                    </li>
+                    <li>
+                        <button class="boton-menu boton-categoria"><i class="fa-solid fa-cookie-bite"></i>Bebidas</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="fa-solid fa-cart-shopping"></i>Carrito <span class="cantidad">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2023 Equipo 14</p>
+            </footer>
+        </aside>
+
+        <main>
+            <h2 class="titulo-principal">Todos los Postres</h2>
+            
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- cargarProductos() JS -->
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
