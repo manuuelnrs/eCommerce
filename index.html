@@ -14,27 +14,36 @@
 </head>
 <body>
     <div class="wrapper"> 
+        <header class="header-mobile">
+            <h1 class="logo">Postres de Corazón</h1>
+            <button class="open-menu">
+                <i class="fa-solid fa-bars fa-xs"></i>
+            </button>
+        </header>
         <aside>
+            <button class="close-menu">
+                <i class="fa-solid fa-xmark fa-xs"></i>
+            </button>
             <header>
                 <h1 class="logo">Postres de Corazón</h1>
             </header>
             <nav>
                 <ul class="menu">
                     <li>
-                        <button class="boton-menu boton-categoria active"><i class="fa-solid fa-cookie"></i>Postres</button>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="fa-solid fa-cookie"></i>Postres</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="fa-solid fa-cookie-bite"></i>Pasteles</button>
+                        <button id="pasteles" class="boton-menu boton-categoria"><i class="fa-solid fa-cookie-bite"></i>Pasteles</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="fa-solid fa-cookie-bite"></i>Crepas</button>
+                        <button id="crepas" class="boton-menu boton-categoria"><i class="fa-solid fa-cookie-bite"></i>Crepas</button>
                     </li>
                     <li>
-                        <button class="boton-menu boton-categoria"><i class="fa-solid fa-cookie-bite"></i>Bebidas</button>
+                        <button id="bebidas" class="boton-menu boton-categoria"><i class="fa-solid fa-cookie-bite"></i>Bebidas</button>
                     </li>
                     <li>
                         <a class="boton-menu boton-carrito" href="./carrito.html">
-                            <i class="fa-solid fa-cart-shopping"></i>Carrito <span class="cantidad">0</span>
+                            <i class="fa-solid fa-cart-shopping"></i>Carrito <span id="cantidad"  class="cantidad">0</span>
                         </a>
                     </li>
                 </ul>
@@ -45,7 +54,7 @@
         </aside>
 
         <main>
-            <h2 class="titulo-principal">Todos los Postres</h2>
+            <h2 id="titulo-principal" class="titulo-principal">Todos los Postres</h2>
             
             <div id="contenedor-productos" class="contenedor-productos">
                 <!-- cargarProductos() JS -->
@@ -55,5 +64,8 @@
     
     <!-- Cargado de datos con JavaScript -->
     <script src="./js/main.js"></script>
+    <!-- Cargar barra-mobile con JavaScript -->
+    <script src="./js/menu.js"></script>
+    
 </body>
 </html>
