@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: century gothic;
+    text-align: center;
+}
+
+body {
+    background-color: fuchsia;
+}
+
+form {
+    padding: 35px 14px; /* Reducir el padding del formulario */
+    background-color: #ededed;
+    margin: calc(15% + 50px); /* Reducir el margen del formulario */
+    margin-top: 40px;
+    padding-top: 14px; /* Reducir el padding-top del formulario */
+    margin-bottom: 15px; /* Reducir el margen-bottom del formulario */
+}
+
+h1 {
+    text-align: center;
+    padding: 12px;
+    color: #444;
+}
+
+input {
+    width: calc(70% - 20px); /* Reducir el ancho de los inputs en un 30% */
+    padding: 9px;
+    margin: auto;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+input[type='submit'] {
+    background-color: #48e;
+    color: #fff;
+    width: calc(64% - 20px); /* Reducir el ancho del submit en un 30% */
+    margin: 0 18%; /* Alinear el submit en el centro */
+    margin-top: 22px;
+    border: none;
+}
+
+.ok {
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #1e6;
+    color: #fff;
+}
+
+.bad {
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #a22;
+    color: #fff;
+}
+.radio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.opcion-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.textarea-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
