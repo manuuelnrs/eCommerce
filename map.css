@@ -1,7 +1,9 @@
-    body {
-    place-content: center center;
-
+body {
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
+
 .container {
     width: 50%;
 }
@@ -10,7 +12,6 @@
     fill: #fbfc99;    /* Color del mapa */
     stroke: #8b4513;  /* Color de las lineas divisoras */
     stroke-width: 2px;   /* ancho de la linea */
-
     opacity: 0.8; /* Opacidad del mapa */
     transition: fill 0.3s ease; /* Transición suave para cambios de color */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
@@ -21,6 +22,21 @@
 .container :hover {
     fill: #d2417d; /* cambiar el color cuando pasemos el mouse */
 }
+
 .container .colored-path {
     fill: rgb(250, 7, 144);
-  }
+}
+
+/* Estilos para pantallas con ancho máximo de 768px (tablets y celulares en modo horizontal) */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+/* Estilos para pantallas con ancho máximo de 480px (celulares en modo vertical) */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}
